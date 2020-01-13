@@ -54,23 +54,13 @@ public class Machine {
 	}
 
 	void advanceRotors() {
-		boolean advanceLeft = false;
 		boolean advanceMiddle = false;
-		boolean advanceRight = true;
-		if (leftRotor.atNotch()) {
-		}
 		if (middleRotor.atNotch()) {
 			advanceMiddle = true;
-			advanceLeft = true;
+			leftRotor.advance();
 		}
 		if (rightRotor.atNotch()) {
 			advanceMiddle = true;
-			advanceRight = true;
-		}
-		if (advanceLeft) {
-			leftRotor.advance();
-		}
-		if (advanceRight) {
 			rightRotor.advance();
 		}
 		if (advanceMiddle) {

@@ -9,7 +9,7 @@ public class RotorTest {
 
 
 	@Test
-	public void aRotor1convertBackward1(){
+	public void Rotor1convertBackward23(){
 		Rotor rotor = Rotor.rotorFactory("E K M F L G D Q V Z N T O W Y H X U S P A I B R C J", "Q");
 		rotor.setPosition(25);
 		int data = rotor.convertBackward(2);
@@ -18,7 +18,7 @@ public class RotorTest {
 	}
 
 	@Test
-	public void aRotor1convertForward1(){
+	public void Rotor1convertForward11(){
 		Rotor rotor = Rotor.rotorFactory("E K M F L G D Q V Z N T O W Y H X U S P A I B R C J", "Q");
 		rotor.setPosition(25);
 		int data = rotor.convertForward(2);

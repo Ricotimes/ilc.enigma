@@ -47,11 +47,11 @@ public class Rotor {
     }
 
     public int convertForward(int p) {
-        return (cipher[(p + position) % ALPHABET_SIZE] - position) %ALPHABET_SIZE;           
+        return (cipher[(p + position)% ALPHABET_SIZE] - position + ALPHABET_SIZE) %ALPHABET_SIZE;
     }
 
     public int convertBackward(int e) {
-        return (bcipher[(e + position) % ALPHABET_SIZE] - position) %ALPHABET_SIZE;
+        return (bcipher[(e + position) % ALPHABET_SIZE] - position + ALPHABET_SIZE) %ALPHABET_SIZE;
     }
     
     public void advance() {
